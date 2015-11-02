@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8"/>
+    <title></title>
+</head>
+<body>
+<script>
+    var date = new Date("January 13, 1980 11:20:00");
+    document.write((date));
+   
+    document.write(formatDate(date));
+
+    
+
+    function formatDate(date) {
+        var year = date.getFullYear();
+        var month = date.getMonth();
+        month = month + 1;
+        if (month < 10) {
+            month = "0" + month;
+        }
+        var day = date.getDay();
+
+        if (day < 10) {
+            day = "0" + day;
+        }
+
+        return day + "/" + month + "/" + year;
+    }
+
+</script>
+
+</body>
+</html>

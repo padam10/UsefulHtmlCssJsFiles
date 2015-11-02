@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script type="text/javascript"></script>
+</head>
+<body>
+<div id="timeDiv"></div>
+<br/>
+    <input type="button" name="start" value="Start Clock" onclick="startClock()" />
+    <input type="button" name="stop" value="Stop Clock" onclick="stopClock()"/>
+<script>
+    var intervalID;
+    function startClock() {
+        intervalID = setInterval(getCurrentDateTime, 1000);
+    }
+
+    function stopClock() {
+        clearInterval(intervalID);
+    }
+    
+
+    function getCurrentDateTime() {
+        document.getElementById("timeDiv").innerHTML = new Date();
+    }
+
+    getCurrentDateTime();
+</script>
+</body>
+</html>

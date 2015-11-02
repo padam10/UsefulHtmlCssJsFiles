@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+<img src="C:\Users\pbhandari\Documents\UsefulHtmlCssJsFiles\UsefulHtmlCssJsFiles\JavaScript\Images/1.jpg" id="image" style="height: 150px; width: 150px"/>
+<br/>
+    <input type="button" value="Start Slide Show" />
+<input type="button" value="Stop Slide Show"/>
+<br/>
+<div id="result">
+    
+</div>
+<script>
+    function changeImage() {
+        var imageSrc = document.getElementById("image").getAttribute("src");
+        var currentImageNumber = imageSrc.substring(imageSrc.lastIndexOf("/") + 1, imageSrc.lastIndexOf("/") + 2);
+        document.getElementById("result").innerHTML = currentImageNumber;
+        document.getElementById("image").setAttribute("src", "C:\Users\pbhandari\Documents\UsefulHtmlCssJsFiles\UsefulHtmlCssJsFiles\JavaScript\Images");
+    }
+
+    changeImage();
+
+</script>
+</body>
+</html>

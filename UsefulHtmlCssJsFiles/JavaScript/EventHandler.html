@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Js Event Handler</title>
+    <script>
+        function MouseOver() {
+            alert("Hello User !!!");
+        }
+        
+    </script>
+</head>
+<body>
+<p onmouseover="MouseOver();"> Hover your mouse to see an alert</p>
+<br/>
+<input type="button" value="ClickMe" id="btn"
+       onmouseover="changeColorOnMouseOver()"
+       onmouseout= "changeBackgroundOnMouseOver()"/>
+<script>
+    function changeColorOnMouseOver() {
+        var control = document.getElementById("btn");
+        control.style.background = 'red';
+        control.style.color = 'yellow';
+    }
+
+    function changeBackgroundOnMouseOver() {
+        var control = document.getElementById("btn");
+        control.style.background = 'black';
+        control.style.color = 'white';
+    }
+</script>
+    
+</body>
+
+</html>
