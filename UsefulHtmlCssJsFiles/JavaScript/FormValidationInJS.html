@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8"/>
+    <title></title>
+</head>
+<!--onKeyUp event occurs when press a key to write and when we release a key.-->
+<!-- onblur event occurs when an object loses focus-->
+<body>
+<table>
+    <tr>
+        <td>
+            First Name
+        </td>
+        <td>
+            <input type="text" id="txtFirstName" onkeyup="validateRequiredField('txtFirstName')"
+                   onblur="validateRequiredField('txtFirstName')"/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Last Name:
+        </td>
+        <td>
+            <input type="text" id="txtLastName" onkeyup="validateRequiredField('txtLastName')"
+                   onblur="validateRequiredField('txtLastName')" />
+        </td>
+    </tr>
+</table>
+
+<script type="text/javascript">
+
+    function validateRequiredField(controlID) {
+        var control = document.getElementById(controlID);
+        control.style.color = 'White';
+        if (control.value == "") {
+            control.style.background = 'red';
+        } else {
+            control.style.background = 'green';
+        }
+    }
+</script>
+</body>
+</html>

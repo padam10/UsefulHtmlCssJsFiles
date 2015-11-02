@@ -63,7 +63,10 @@
     <Content Include="HTML\PasswordInputDemo.html" />
     <Content Include="HTML\RadioButtonDemo.html" />
     <Content Include="HTML\SelectBox.html" />
+    <Content Include="JavaScript\AddEventListenerAndRemoveEventListener.html" />
+    <Content Include="JavaScript\AssigningEventHandlerUsingDOM.html" />
     <Content Include="JavaScript\ConfirmationDialog.html" />
+    <Content Include="JavaScript\FormValidationInJS.html" />
     <Content Include="JavaScript\Images\1.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
