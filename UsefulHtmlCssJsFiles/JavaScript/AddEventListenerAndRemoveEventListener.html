@@ -7,6 +7,7 @@
 </head>
 <body>
 <input type="button" value="Click Me" id="btn"/>
+<input type="button" value="Remove Event Handlers" onclick="removeEventHandlers()"/>
 <script type="text/javascript">
     btn.addEventListener("mouseover", changeColorOnMouseOver, false);
     btn.addEventListener("mouseout", changeColorOnMouseOut, false);
@@ -20,6 +21,11 @@
         this.style.background = 'black';
         this.style.color = 'white';
 
+    }
+
+    function removeEventHandlers() {
+        btn.removeEventListener("mouseover", changeColorOnMouseOver);
+        btn.removeEventListener("mouseover", changeColorOnMouseOut);
     }
     
 </script> 

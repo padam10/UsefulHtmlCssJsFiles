@@ -66,6 +66,8 @@
     <Content Include="JavaScript\AddEventListenerAndRemoveEventListener.html" />
     <Content Include="JavaScript\AssigningEventHandlerUsingDOM.html" />
     <Content Include="JavaScript\ConfirmationDialog.html" />
+    <Content Include="JavaScript\EventBubblinginJavaScript.html" />
+    <Content Include="JavaScript\EventCapturingInJavaScript.html" />
     <Content Include="JavaScript\FormValidationInJS.html" />
     <Content Include="JavaScript\Images\1.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -81,6 +83,8 @@
     <Content Include="JavaScript\ExternalJsDemo.html" />
     <Content Include="JavaScript\ImageSlideshowDemo.html" />
     <Content Include="JavaScript\InternalScript.html" />
+    <Content Include="JavaScript\JSEventObject.html" />
+    <Content Include="JavaScript\PreventingBrowserDefault.html" />
     <Content Include="JavaScript\script.js" />
     <Content Include="JavaScript\TimingEvents.html" />
     <Content Include="style.css" />

@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+<!--Prvent default does not allow you to right click the text and copy it-->
+<h1>On this page right click is disabled</h1>
+  <!-- If you do not want the link to work you can create a preventdefault method and stop it -->
+<a href="http://www.datascan.com" onclick="preventDefaultAction()"> Go to Datascan </a>
+
+<script type="text/javascript">
+    document.oncontextmenu = preventDefaultAction;
+
+    function preventDefaultAction(event) {
+        event = event || window.event;
+        if (event.preventDefault) {
+            event.preventDefault();
+        } else {
+            event.returnValue = false;
+        }
+    }
+</script>
+</body>
+</html>
