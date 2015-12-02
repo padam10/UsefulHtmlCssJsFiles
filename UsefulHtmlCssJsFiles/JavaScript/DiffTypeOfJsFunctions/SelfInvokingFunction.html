@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8"/>
+    <title></title>
+</head>
+
+<body>
+<h2> Self invoking function, it is also called here 6 is automatically called.  </h2>
+<script type="text/javascript">
+    var result = (function computerFactorial(number) {
+        if (number <= 1) {
+            return 1;
+        }
+        return number * computerFactorial(number - 1);
+
+    })(6);
+
+    document.write(result);
+
+</script>
+</body>
+</html>

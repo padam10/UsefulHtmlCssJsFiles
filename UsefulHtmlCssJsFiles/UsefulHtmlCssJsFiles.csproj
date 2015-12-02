@@ -64,11 +64,13 @@
     <Content Include="HTML\RadioButtonDemo.html" />
     <Content Include="HTML\SelectBox.html" />
     <Content Include="JavaScript\AddEventListenerAndRemoveEventListener.html" />
+    <Content Include="JavaScript\AnnonomusFunction.html" />
     <Content Include="JavaScript\AssigningEventHandlerUsingDOM.html" />
     <Content Include="JavaScript\ConfirmationDialog.html" />
     <Content Include="JavaScript\EventBubblinginJavaScript.html" />
     <Content Include="JavaScript\EventCapturingInJavaScript.html" />
     <Content Include="JavaScript\FormValidationInJS.html" />
+    <Content Include="JavaScript\FunctionHoistingInJs.html" />
     <Content Include="JavaScript\Images\1.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -84,8 +86,10 @@
     <Content Include="JavaScript\ImageSlideshowDemo.html" />
     <Content Include="JavaScript\InternalScript.html" />
     <Content Include="JavaScript\JSEventObject.html" />
+    <Content Include="JavaScript\NamedFunctionExpression.html" />
     <Content Include="JavaScript\PreventingBrowserDefault.html" />
     <Content Include="JavaScript\script.js" />
+    <Content Include="JavaScript\SelfInvokingFunction.html" />
     <Content Include="JavaScript\TimingEvents.html" />
     <Content Include="style.css" />
     <Content Include="HTML\SubmitDemo.html" />
